@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro - Glowtica</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">Glowtica</div>
+
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+
+    <nav id="menu">
+
+        <ul>
+
+            <li><a href="inicio.html">Inicio</a></li>
+
+            <li><a href="productos.html">Productos</a></li>
+
+            <li><a href="encuesta.html">Encuesta</a></li>
+
+            <li><a href="login.html">Iniciar sesión</a></li>
+
+            <li><a href="registros.html">Registrarse</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<section class="formulario">
+
+    <h2>Registro de Usuario</h2>
+
+    <form>
+
+        <label>Nombre</label>
+        <input type="text" required>
+
+        <label>Apellidos</label>
+        <input type="text" required>
+
+        <label>Nombre de Usuario</label>
+        <input type="text" required>
+
+        <label>Correo Electrónico</label>
+        <input type="email" required>
+
+        <label>Contraseña</label>
+        <input type="password" required>
+
+        <label>Confirmar Contraseña</label>
+        <input type="password" required>
+
+        <label>País</label>
+
+        <select>
+
+            <option>Colombia</option>
+            <option>México</option>
+            <option>Perú</option>
+            <option>Argentina</option>
+
+        </select>
+
+        <label>Ciudad</label>
+
+        <input type="text">
+
+        <br><br>
+
+        <input type="submit" value="Registrarse">
+
+    </form>
+
+</section>
+
+<button id="btnArriba" title="Volver arriba">↑</button>
+
+<script src="../controller/app.js"></script>
+
+</body>
+
+</html>

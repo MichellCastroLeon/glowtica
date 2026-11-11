@@ -1,0 +1,359 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Productos - Glowtica</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">Glowtica</div>
+
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="encuesta.html">Encuesta</a></li>
+            <li><a href="login.html">Iniciar sesión</a></li>
+            <li><a href="registros.html">Registrarse</a></li>
+        </ul>
+    </nav>
+
+    <a href="#" id="abrir-carrito" class="carrito-icono">
+    🛒 <span id="contador-carrito">0</span>
+</a>
+</header>
+
+
+<main>
+
+    <section class="productos-section">
+
+        <h1 class="titulo">Nuestros productos</h1>
+
+        <p class="descripcion-productos">
+            Encuentra todo lo que necesitas para cuidar y consentir tu belleza.
+        </p>
+
+
+        <!-- ================= CUIDADO CAPILAR ================= -->
+
+        <div class="categoria" id="capilar">
+
+            <h2>💜 Cuidado capilar</h2>
+
+            <div class="productos-grid">
+
+                <div class="producto">
+                    <img src="../img/shampoo.jpg" alt="Shampoo">
+                    <h3>Shampoo</h3>
+                    <p>Limpia y cuida tu cabello.</p>
+                    <span>$25.000</span>
+                   <button class="btn-carrito"
+        data-nombre="Shampoo"
+        data-precio="25000">
+    Agregar al carrito
+</button>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/acondicionador.jpg" alt="Acondicionador">
+                    <h3>Acondicionador</h3>
+                    <p>Deja tu cabello suave y manejable.</p>
+                    <span>$22.000</span>
+                    <button class="btn-carrito"
+        data-nombre="Acondicionador"
+        data-precio="22000">
+    Agregar al carrito
+</button>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/mascarilla.jpg" alt="Mascarilla capilar">
+                    <h3>Mascarilla capilar</h3>
+                    <p>Nutre y ayuda a mantener tu cabello saludable.</p>
+                    <span>$28.000</span>
+                   <button class="btn-carrito"
+        data-nombre="Mascarilla capilar"
+        data-precio="28000">
+    Agregar al carrito
+</button>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/gorro.jpg" alt="Gorro de satín">
+                    <h3>Gorro de satín</h3>
+                    <p>Ayuda a proteger tu cabello durante la noche.</p>
+                    <span>$18.000</span>
+                    <button class="btn-carrito"
+        data-nombre="Gorro de satín"
+        data-precio="18000">
+    Agregar al carrito
+</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= SKINCARE ================= -->
+
+        <div class="categoria" id="skincare">
+
+            <h2>✨ Skincare</h2>
+
+            <div class="productos-grid">
+
+                <div class="producto">
+                    <img src="../img/skincare.jpg" alt="Limpiador facial">
+                    <h3>Limpiador facial</h3>
+                    <p>Limpia suavemente tu rostro.</p>
+                    <span>$24.000</span>
+                  <button class="btn-carrito"
+        data-nombre="Limpiador facial"
+        data-precio="24000">
+    Agregar al carrito
+</button>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/serum.jpg" alt="Sérum facial">
+                    <h3>Sérum facial</h3>
+                    <p>Complementa tu rutina de cuidado facial.</p>
+                    <span>$32.000</span>
+                    <button class="btn-carrito"
+        data-nombre="Sérum facial"
+        data-precio="32000">
+    Agregar al carrito
+</button>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/crema.jpg" alt="Crema facial">
+                    <h3>Crema facial</h3>
+                    <p>Ayuda a mantener la piel hidratada.</p>
+                    <span>$27.000</span>
+                   <button class="btn-carrito"
+        data-nombre="Crema facial"
+        data-precio="27000">
+    Agregar al carrito
+</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= MAQUILLAJE ================= -->
+
+        <div class="categoria" id="maquillaje">
+
+            <h2>💄 Maquillaje</h2>
+
+            <div class="productos-grid">
+
+                <div class="producto">
+                    <img src="../img/base.jpg" alt="Base de maquillaje">
+                    <h3>Base de maquillaje</h3>
+                    <p>Ayuda a conseguir un acabado uniforme.</p>
+                    <span>$35.000</span>
+                   <button class="btn-carrito"
+        data-nombre="Base de maquillaje"
+        data-precio="35000">
+    Agregar al carrito
+</button>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/corrector.jpg" alt="Corrector">
+                    <h3>Corrector</h3>
+                    <p>Ideal para complementar tu maquillaje.</p>
+                    <span>$20.000</span>
+                    <button class="btn-carrito"
+        data-nombre="Corrector"
+        data-precio="20000">
+    Agregar al carrito
+</button>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/rubor.jpg" alt="Rubor">
+                    <h3>Rubor</h3>
+                    <p>Aporta un toque de color a tu rostro.</p>
+                    <span>$18.000</span>
+                    <button class="btn-carrito"
+        data-nombre="Rubor"
+        data-precio="18000">
+    Agregar al carrito
+</button>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/labial.jpg" alt="Labial">
+                    <h3>Labial</h3>
+                    <p>Color y estilo para complementar tu look.</p>
+                    <span>$16.000</span>
+                    <button class="btn-carrito"
+        data-nombre="Labial"
+        data-precio="16000">
+    Agregar al carrito
+</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CUIDADO CORPORAL ================= -->
+
+        <div class="categoria" id="corporal">
+
+            <h2>🧴 Cuidado corporal</h2>
+
+            <div class="productos-grid">
+
+                <div class="producto">
+                    <img src="../img/crema-corporal.jpg" alt="Crema corporal">
+                    <h3>Crema corporal</h3>
+                    <p>Ayuda a mantener la piel suave e hidratada.</p>
+                    <span>$25.000</span>
+                    <button class="btn-carrito"
+        data-nombre="Crema corporal"
+        data-precio="25000">
+    Agregar al carrito
+</button>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/exfoliante.jpg" alt="Exfoliante corporal">
+                    <h3>Exfoliante corporal</h3>
+                    <p>Complementa tu rutina de cuidado corporal.</p>
+                    <span>$23.000</span>
+                    <button class="btn-carrito"
+        data-nombre="Exfoliante corporal"
+        data-precio="23000">
+    Agregar al carrito
+</button>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/jabon.jpg" alt="Jabón corporal">
+                    <h3>Jabón corporal</h3>
+                    <p>Limpieza y cuidado para tu piel.</p>
+                    <span>$14.000</span>
+                    <button class="btn-carrito"
+        data-nombre="Jabón corporal"
+        data-precio="14000">
+    Agregar al carrito
+</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= PERFUMERÍA ================= -->
+
+        <div class="categoria" id="perfumeria">
+
+            <h2>🌸 Perfumería</h2>
+
+            <div class="productos-grid">
+
+                <div class="producto">
+                    <img src="../img/perfume.jpg" alt="Perfume">
+                    <h3>Perfume</h3>
+                    <p>Una fragancia para cada ocasión.</p>
+                    <span>$45.000</span>
+                    <button class="btn-carrito"
+        data-nombre="Perfume"
+        data-precio="45000">
+    Agregar al carrito
+</button>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/body-splash.jpg" alt="Body Splash">
+                    <h3>Body Splash</h3>
+                    <p>Una fragancia ligera para todos los días.</p>
+                    <span>$30.000</span>
+                    <button class="btn-carrito"
+        data-nombre="Body Splash"
+        data-precio="30000">
+    Agregar al carrito
+</button>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/perfume-mini.jpg" alt="Perfume mini">
+                    <h3>Perfume mini</h3>
+                    <p>Tu fragancia favorita en un tamaño práctico.</p>
+                    <span>$25.000</span>
+                    <button class="btn-carrito"
+        data-nombre="Perfume mini"
+        data-precio="25000">
+    Agregar al carrito
+</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- ================= BOTÓN VOLVER ARRIBA ================= -->
+
+<button id="btnArriba">↑</button>
+
+<div id="carrito" class="carrito">
+
+    <div class="carrito-contenido">
+
+        <button id="cerrar-carrito" class="cerrar-carrito">✕</button>
+
+        <h2>🛍️ Mi carrito</h2>
+
+        <div id="productos-carrito"></div>
+
+        <div class="carrito-total">
+            <strong>Total:</strong>
+            <span id="total-carrito">$0</span>
+        </div>
+
+        <button id="vaciar-carrito" class="btn-vaciar">
+            Vaciar carrito
+        </button>
+
+        <button id="comprar-carrito" class="btn-comprar">
+            Finalizar compra
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="../controller/app.js"></script>
+
+</body>
+
+</html>
+```
